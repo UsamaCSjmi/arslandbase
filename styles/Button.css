@@ -1,0 +1,67 @@
+.btn{
+    font-family: var(--font-cinzel-stylist);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid var(--theme-primary-color);
+    background:transparent;
+    color: var(--theme-primary-color);
+    min-width: 100px;
+}
+.btn:hover{
+    background: var(--theme-primary-color);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.active-btn{
+    background: var(--theme-primary-color);
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.abt-btn {
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: var(--theme-primary-color);
+    font-size: 16px;
+    color: white;
+    border: none;
+    border: 1px solid var(--theme-primary-color);
+    padding: 8px 12px;
+    transition: all 0.5s ease;
+}
+
+.abt-btn:hover {
+    background-color: #fff;
+    color: var(--theme-primary-color);
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.quick-enquiry-btn{
+    border: none;
+    color: #fff;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    text-transform: capitalize;
+    font-family: var(--font-cinzel-stylist);
+    animation: changingColor 2s infinite;
+    transition: color 0.5s ease;
+}
+@keyframes changingColor {
+    0%{
+        color:#fff;
+    }
+    50%{
+        color: #f4c189;
+    }
+    100%{
+        color: #fff;
+    }
+}

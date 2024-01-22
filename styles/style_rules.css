@@ -1,0 +1,40 @@
+:root{
+    --theme-primary-color : #0a324c;
+    --font-cinzel-stylist: 'Cinzel', sans-serif;
+    --font-cinzel-decorative: 'Cinzel Decorative', cursive;
+    --font-cormorant-garamond-decent-stylist: 'Cormorant Garamond', serif;
+    --font-montserrat-decent: 'Montserrat', sans-serif;
+    --font-quicksand-decent: 'Quicksand', sans-serif;
+
+    --font-heading : 'Young Serif', serif;
+    --font-content : 'Edu QLD Beginner', cursive;
+    --font-highlight : 'Lavishly Yours', cursive;
+}
+.font-content{
+    font-family: var(--font-content);
+}
+.font-heading{
+    font-size: 0.7em;
+    font-family: var(--font-heading);
+}
+.font-highlight{
+    font-family: var(--font-highlight);
+}
+
+
+.font-cinzel-stylist{
+    font-family: var(--font-cinzel-stylist);
+}
+.font-cinzel-decorative{
+    font-family: var(--font-cinzel-decorative);
+}
+.font-cormorant-garamond-decent-stylist{
+    font-family: var(--font-cormorant-garamond-decent-stylist);
+}
+.font-montserrat-decent{
+    font-family: var(--font-montserrat-decent);
+}
+.font-quicksand-decent{
+    font-family: var(--font-quicksand-decent);
+}
+

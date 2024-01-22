@@ -1,0 +1,23 @@
+.theme-card{
+    position: relative;
+    background-color: var(--theme-primary-color);
+    border-radius: 40px;
+    width: 90%;
+    font-weight: 400;
+
+    min-height: 500px;
+    color: #fff;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: transform 1s ease;
+    box-shadow: 10px 10px 10px grey;
+    overflow: hidden;
+    text-align: center;
+    padding:20px;
+}
+.theme-card:hover{
+    transform: scale(1.02);
+    transition: transform 1s ease;
+}

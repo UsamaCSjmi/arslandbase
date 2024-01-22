@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capture Portion of Screen</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <button id="captureButton">Capture Screen</button>
+    <canvas id="canvas" width="300" height="300" style="display: none;"></canvas>
+    <img id="capturedImage" src="" alt="Captured Portion" style="display: none;">
+    
+    <script>
+        document.getElementById('captureButton').addEventListener('click', captureScreen);
+
+        function captureScreen() {
+            // Capture the entire document using html2canvas
+            html2canvas(document.body).then(function(canvas) {
+                const ctx = document.getElementById('canvas').getContext('2d');
+                
+                // Define the coordinates and dimensions of the portion to capture
+                const x = 0; // X-coordinate of the top-left corner
+                const y = 0; // Y-coordinate of the top-left corner
+                const width = 300; // Width of the portion
+                const height = 300; // Height of the portion
+
+                // Draw the captured portion onto the canvas
+                ctx.drawImage(canvas, x, y, width, height, 0, 0, width, height);
+
+                // Convert the captured portion to an image and display it
+                const capturedImage = document.getElementById('capturedImage');
+                capturedImage.src = document.getElementById('canvas').toDataURL('image/png');
+                capturedImage.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
