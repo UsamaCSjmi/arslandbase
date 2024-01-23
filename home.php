@@ -379,7 +379,7 @@ $exclRes = mysqli_query($conn, $exclSql);
                         ?>
                         
                     <div class="item">
-                        <a href = <?php echo SITE_PATH."/properties/developers/".strtolower($developer['developer_name'])?> class="dev-logo-container">
+                        <a href = <?php echo SITE_PATH."/properties/developers/".strtolower(urlencoder($developer['developer_name']))?> class="dev-logo-container">
                             <img class="developer-logo" src="<?php echo SITE_PATH?>/images/developers/<?php echo $developer['developer_logo']?>" alt="<?php echo $developer['developer_name']?>">
                         </a>    
                     

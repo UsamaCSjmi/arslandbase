@@ -19,6 +19,14 @@ define('DB_HOST', 'localhost');
 // define('DB_USER', 'u194879868_ars');
 // define('DB_PASSWORD', 'c~#mz#3O');
 // define('DB_HOST', 'localhost');
+function urlencoder($str){
+    $str = str_replace(" ","-",$str);
+    return $str;
+}
+function urldecoder($str){
+    $str = str_replace("-"," ",$str);
+    return $str;
+}
 
 $url = $_SERVER['REQUEST_URI'];
 $current_page = basename($url);

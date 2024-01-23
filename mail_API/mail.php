@@ -213,8 +213,8 @@ elseif(isset($_POST['submit_quick_enq'])){
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $id='mailer@arslandbase.com';
         $pass='ajhdgDCu22#$nsd';
-        // $to='info@arslandbase.com';
-        $to='nhusain34@gmail.com';
+        $to='info@arslandbase.com';
+        // $to='nhusain34@gmail.com';
         $subject="Quick Enquiry from ARSLandbase.com";
         $message1 = "\nEmail : ".$from."\n\n Name : ".$name."\n\n Phone : ".$phone."\n\n Message : ".$message;
     }

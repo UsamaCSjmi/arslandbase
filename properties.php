@@ -9,6 +9,7 @@ else if($table == "cities"){
 }
 else if($table == "developers"){
     $column = "developer_name";
+    $filter = urldecoder($filter);
 }
 $banner_image_name = strtolower($filter);
 if($filter == "all"){
