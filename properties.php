@@ -49,7 +49,8 @@ $num_rows = mysqli_num_rows($res);
             }
             else{
                 ?>
-            <img src="<?php echo SITE_PATH?>/images/developers.avif" style="width:100%">
+            <!-- <img src="<?php echo SITE_PATH?>/images/developers.avif" style="width:100%"> -->
+            <img src="<?php echo SITE_PATH?>/images/properties/uploads/Empire.jpg" style="width:100%">
                 <?php
             }
             ?>

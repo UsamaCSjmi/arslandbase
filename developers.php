@@ -7,7 +7,8 @@ $res = mysqli_query($conn,$sql);
 <div class="container col">
     <div class="banner banner-about container">
         <div class="banner-img">
-            <img src="<?php echo SITE_PATH?>/images/developers.avif" style="width:100%">
+            <img src="<?php echo SITE_PATH?>/images/properties/uploads/Empire.jpg" style="width:100%">
+            <!-- <img src="<?php echo SITE_PATH?>/images/developers.avif" style="width:100%"> -->
         </div>
         <div class="banner-cover container">
             <div class="row center">
