@@ -77,27 +77,13 @@
                     <div class="q_a">
                         <h4 class="q_on">What is ARS Landbase?</h4>
                         <div class="a_on">
-                            <p>ARS Landbase is a fastest growing Real Estate Consultancy Company and the dynamic venture, which is being launched by the leadership of ARS Landbase, which was launched in the month of April 2016. While, ARS Landbase has been operating since 2007, the leaders at the company wanted to improve and refine their existing services to cater to the requirements of their customers, which prompted them to set up ARS Landbase.</p>
-                            <p>ARS Landbase has digitised itself to offer best in class, prompt and quality services to its customers by using its highly innovative consultancy/service models. The company is now looking to offer end to end solutions to buyers and sellers through their website. ARS Landbase caters to the requirements of its clients in numerous areas including commercial sector, residential projects, commercial leasing, resale projects and Turnkey Solutions.</p>
-                        </div>
-                    </div>
-                    <div class="q_a">
-                        <h4 class="q_on">Is ARS Landbase a subsidiary of ARS Landbase?</h4>
-                        <div class="a_on">
-                            <p>ARS Landbase is a subsidiary of ARS Landbase. Though, it is an entirely new venture under the umbrella of ARS Landbase, launched with the purpose of offering exceptional, quick and end-to-end turnkey solutions to its clients in the real estate space.</p>
-                            <p>ARS Landbase was launched after the owner of the company resolved to use his expertise and knowledge from the mortgage industry to meet and satisfy the needs of buyers in the real estate sector. The company dealt with the recent problems and issues of the customers in the real estate sector, which further enabled them in becoming the premium channel partners of some of the leading real estate developers in the country including DLF Limited, Vatika Limited, Tata Housing, M3M India Limited, Godrej Properties, Conscient Infrastructure, Eldeco Properties and Mahindra LifeSpaces among others.</p>										
-                        </div>
-                    </div>
-                    <div class="q_a">
-                        <h4 class="q_on">Turnkey Solutions at ARS Landbase</h4>
-                        <div class="a_on">
-                            <p>Our turnkey solutions are all about delivering exceptional quality, value and services to our clients, which further enables them in managing their projects and delivering excellent services to the customers in the real estate segment. We offer a comprehensive range of property consulting, leasing and buying services to property buyers, which allow them to make the right real estate investments, and decisions. Our customised software is designed to help our clients manage their properties and office related procedures well. We will aid our customers by providing them excellent property consultancy, mortgage and planning services.</p>										
+                            <p>ARS Landbase is a distinguished real estate consultancy firm known for its expertise in guiding clients through the complexities of the real estate market. We pride ourselves on fostering strong partnerships with the top builders in Delhi-NCR, enabling us to offer our clients access to a diverse portfolio of high-quality properties. Our services encompass a wide range, including property valuation, investment strategies, and market trend analysis. With a commitment to excellence, we empower clients with the knowledge needed to make sound and informed real estate decisions.</p>
                         </div>
                     </div>
                     <div class="q_a">
                         <h4 class="q_on">Where ARS Landbase is located?</h4>
                         <div class="a_on">
-                            <p>ARS Landbase, leading real estate consulting and mortgage planning company which is centrally located in the city of Gurgaon, Haryana in India. Please visit us for a cup of coffee and discuss the possibilities we can shake hands together.</p>
+                            <p>ARS Landbase is conveniently located at Emaar Emerald Plaza on Golf Course Extension Road in Gurgaon. Whether you’re seeking property advice, investment strategies, or market insights, we are here to serve you effectively and efficiently.</p>
                         </div>
                     </div>
                 </div>							
@@ -140,6 +126,7 @@
                                 <li>Payment Receipts for the payment made till date.</li>
                                 <li>Executed Builder Buyer Agreement.</li>
                                 <li>Possession Letter( Given at the time of Possession)</li>
+                                <li>Sales Seed</li>
                             </ol>
                         </div>
                     </div>

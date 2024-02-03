@@ -290,7 +290,6 @@ select{
   .form-input:focus-visible{
     outline: none;
   }
-
   .form-button {
       background-color: #000000;
       color: #fff;
@@ -1098,6 +1097,7 @@ footer{
 .footer-right{
     width: 30%;
     margin-left: 0;
+    margin-top: 50px;
 }
 .footer-right-form-heading{
     color: white;
@@ -1248,7 +1248,8 @@ footer svg{
     justify-content: center;
     width: 100%;
     margin: 30px 0;
-    background:#000000;
+    /* background:#000000; */
+    background:var(--theme-primary-color);
 }
 .overview-box img{
     width: 50%;
@@ -1356,7 +1357,8 @@ footer svg{
     cursor: pointer;
 }
 .floor-plans-buttons button.active{
-    background: #000;
+    /* background: #000; */
+    background: var(--theme-primary-color);
     color: #fff;
 }
 #floor-plan .image-wrapper{
@@ -1378,7 +1380,8 @@ footer svg{
 } 
 .property-content-table-wrapper thead{
     border-radius: 20px;
-    background: #000;
+    background: var(--theme-primary-color);
+    /* background: #000; */
     color: #fff;
 }
 .property-content-table-wrapper tr:nth-child(even){
@@ -1455,4 +1458,8 @@ footer svg{
     background: #00000079;
     /* color: #000; */
     transition: all 0.5s ease;
+}
+
+.invalid-input{
+    border:1px solid red!important;
 }

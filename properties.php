@@ -9,7 +9,7 @@ else if($table == "cities"){
 }
 else if($table == "developers"){
     $column = "developer_name";
-    $filter = urldecoder($filter);
+    $filter = strtoupper(urldecoder($filter));
 }
 $banner_image_name = strtolower($filter);
 if($filter == "all"){
@@ -50,7 +50,7 @@ $num_rows = mysqli_num_rows($res);
             else{
                 ?>
             <!-- <img src="<?php echo SITE_PATH?>/images/developers.avif" style="width:100%"> -->
-            <img src="<?php echo SITE_PATH?>/images/properties/uploads/Empire.jpg" style="width:100%">
+            <img src="<?php echo SITE_PATH?>/images/backgrounds/gurugram.jpg" style="width:100%">
                 <?php
             }
             ?>

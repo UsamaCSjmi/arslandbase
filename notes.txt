@@ -1,3 +1,0 @@
-assets/header.php      
-styles/style.css
-js/index.js

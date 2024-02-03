@@ -54,3 +54,49 @@ function hideQuickEnq(){
     let quick = document.getElementById("quick-enq");
     quick.style.display = "none";
 }
+function isChar(s){
+    if((s>='A' && s<='Z')||(s>='a'&&s<='z')||(s==' ')){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+function isName(str){
+    let isValid = true;
+    for(i=0;i<str.length;i++){
+        if(!isChar(str[i])){
+            isValid=false;
+            break;
+        }
+    }
+    return isValid;
+}
+// let forms = document.querySelectorAll('form');
+// forms.forEach((form)=>{
+//     form.addEventListener('submit',(event)=>{
+//         event.preventDefault();
+//         let str = form.querySelector('[name="name"]');
+//         if(str.value!=null && !isName(str.value)){
+//             str.value="";
+//             str.classList.add("invalid-input");
+//         }
+//         else{
+//             str.classList.remove("invalid-input");
+//             form.submit();
+//         }
+//     });
+
+// });
+let nameElements = document.querySelectorAll("input[name='name']");
+nameElements.forEach((name)=>{
+    name.addEventListener('change',(event)=>{
+        if(name.value!="" && !isName(name.value)){
+            name.value="";
+            name.classList.add("invalid-input");
+        }
+        else{
+            name.classList.remove("invalid-input");
+        }
+    });
+});

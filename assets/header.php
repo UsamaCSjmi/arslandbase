@@ -64,7 +64,7 @@
                             <a class="nav-link" href="<?php echo SITE_PATH?>/news">News & Events</a>
                         </li>
                         <!--<li class="nav-item">-->
-                        <!--    <a class="nav-link" href="<?php// echo SITE_PATH;?>/developers">Developers</a>-->
+                        <!--    <a class="nav-link" href="<? php// echo SITE_PATH;?>/developers">Developers</a>-->
                         <!--</li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo SITE_PATH?>/careers">Careers</a>
