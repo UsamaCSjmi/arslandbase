@@ -1201,7 +1201,7 @@ footer svg{
 }
 .quick-call-property{
     position: absolute;
-    bottom: 60px;
+    bottom: 130px;
     left: 50px;
 }
 .quick-call-property button{
@@ -1213,8 +1213,8 @@ footer svg{
 }
 .quick-call-property button .changing-color{
     color: #ffffff;
-    font-weight: 400;
-    animation: changingColor 2s infinite;
+    font-weight: bold;
+    /* animation: changingColor 2s infinite; */
     margin-left: 20px;
 }
 .quick-call-property-icon{
@@ -1390,6 +1390,7 @@ footer svg{
 .property-content-table-wrapper td,.property-content-table-wrapper th{
     padding: 20px;
     font-weight: 400;
+    text-align: center;
 }
 .amenities-container{
     margin-top: 20px;
@@ -1448,8 +1449,8 @@ footer svg{
     border: 1px solid #000;
     position: absolute;
     font-weight: 400;
-    bottom: 50px;
-    right: 80px;
+    bottom:60px;
+    left: 50px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.5s ease;

@@ -25,7 +25,7 @@
                 </button>
             </div>
             <div class="brochure">
-                <button onclick="showQuickEnq()">Download Brochure</button>
+                <button>Download Brochure</button>
             </div>
         </div>
 
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="container col">
-            <div class="grid-7-3-lg grid-1-md grid-1-sm w-100 p-30">
+            <div class="grid-1-lg grid-1-md grid-1-sm w-100 p-30">
                 <div class="property-info">
                     <div id="floor-plan" class="property-content">
                         <div class="property-content-header">Floor Plan</div>
@@ -103,38 +103,38 @@
 
                         <div class="property-content-table-wrapper">
                             <table>
-                                <thead>
+                                <!-- <thead>
                                     <tr>
                                         <th>Property Type</th>
                                         <th>Area in Sq. Ft.</th>
                                         <th>Min Pricing</th>
                                     </tr>
-                                </thead>
+                                </thead> -->
                                 <tbody>
                                     <tr>
                                         <td>2 BHK</td>
                                         <td>1470 Sq. Ft.</td>
-                                        <td>14332500</td>
+                                        <!-- <td>14332500</td> -->
                                     </tr>
                                     <tr>
                                         <td>2 BHK</td>
                                         <td>1470 Sq. Ft.</td>
-                                        <td>14332500</td>
+                                        <!-- <td>14332500</td> -->
                                     </tr>
                                     <tr>
                                         <td>2 BHK</td>
                                         <td>1470 Sq. Ft.</td>
-                                        <td>14332500</td>
+                                        <!-- <td>14332500</td> -->
                                     </tr>
                                     <tr>
                                         <td>2 BHK</td>
                                         <td>1470 Sq. Ft.</td>
-                                        <td>14332500</td>
+                                        <!-- <td>14332500</td> -->
                                     </tr>
                                     <tr>
                                         <td>2 BHK</td>
                                         <td>1470 Sq. Ft.</td>
-                                        <td>14332500</td>
+                                        <!-- <td>14332500</td> -->
                                     </tr>
                                 </tbody>
                             </table>
@@ -203,7 +203,7 @@
                     </div>
 
                 </div>
-                <div class="contact-wrapper p-20">
+                <!-- <div class="contact-wrapper p-20">
                     <div class="sticky-top">
                         <div class="contact-form">
                             <h3 class="small-heading">Contact Us</h3>
@@ -216,7 +216,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

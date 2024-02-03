@@ -6,6 +6,7 @@
             <style>
                 .news-container,
                 .news-event-container {
+                font-family: var(--font-cormorant-garamond-decent-stylist);
                 background-color: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 border-radius: 8px;
@@ -103,7 +104,32 @@
                 }
             </style>
 
+            
             <div class="news-container">
+                <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news2.avif" alt="News Image">
+                <div class="news-content">
+                    <h3 class="news-title">Haryana govt begins work on Global City project phase 1</h3>
+                    <p class="news-text">The Haryana government has started work on Phase 1 of the Global City project in Gurugram, which will include residential and commercial spaces with modern infrastructure.</p>
+                    <p class="news-date">February 03, 2024</p>
+                    <div class="news-read-more">
+                        <a class="news-read-more-button" target="_blank" rel="nofollow" href="https://www.hindustantimes.com/cities/gurugram-news/haryana-govt-begins-work-on-global-city-project-phase-1-101706722949854.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-container">
+                <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news1.webp" alt="News Image">
+                <div class="news-content">
+                    <h3 class="news-title">Boney Kapoor & Bhutani to build UP's Film City</h3>
+                    <p class="news-text">Producer Boney Kapoor's Bayview Projects and real estate company Bhutani Group bagged the rights to develop UP government's ambitious Film City near the upcoming Noida...</p>
+                    <p class="news-date">January 10, 2024</p>
+                    <div class="news-read-more">
+                        <a class="news-read-more-button" target="_blank" rel="nofollow" href="http://timesofindia.indiatimes.com/articleshow/107275578.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="news-container">
                 <img class="news-image" src="https://via.placeholder.com/300x150" alt="News Image">
                 <div class="news-content">
                 <h3 class="news-title">Breaking News</h3>
@@ -116,9 +142,9 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="news-event-container">
+            <!-- <div class="news-event-container">
                 <img class="news-event-image" src="https://via.placeholder.com/300x150" alt="Event Image">
                 <div class="news-event-content">
                 <div class="news-event-badge">Event</div>
@@ -132,7 +158,7 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
