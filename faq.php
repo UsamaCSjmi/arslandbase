@@ -126,7 +126,7 @@
                                 <li>Payment Receipts for the payment made till date.</li>
                                 <li>Executed Builder Buyer Agreement.</li>
                                 <li>Possession Letter( Given at the time of Possession)</li>
-                                <li>Sales Seed</li>
+                                <li>Sale Deed</li>
                             </ol>
                         </div>
                     </div>

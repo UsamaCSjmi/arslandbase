@@ -70,7 +70,7 @@
                             <a class="nav-link" href="<?php echo SITE_PATH?>/careers">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo SITE_PATH?>/people">People</a>
+                            <a class="nav-link" href="#">Team</a>
                         </li>
                     </ul>
                 </li>

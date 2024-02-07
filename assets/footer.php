@@ -30,7 +30,7 @@
                 <!--<li><a href="<?php echo SITE_PATH?>">Developers</a></li>-->
                 <li><a href="<?php echo SITE_PATH?>/contact">Contact Us</a></li>
                 <li><a href="<?php echo SITE_PATH?>/careers">Career</a></li>
-                <li><a href="<?php echo SITE_PATH?>/people">People</a></li>
+                <li><a href="#">Team</a></li>
                 <li><a href="<?php echo SITE_PATH?>/terms-and-conditions">Terms & Conditions</a></li>
                 <li><a href="<?php echo SITE_PATH?>/privacy-policy">Privacy Policy</a></li>
                 <li><a href="<?php echo SITE_PATH?>/faq">FAQs</a></li>
@@ -70,6 +70,7 @@
                 <!-- <input type="text" placeholder="Your Name" class="footer-input"><br> -->
                 <input type="email" placeholder="Your Email*" class="footer-input" required><br>
                 <input type="hidden" name="req_page" value="<?php echo $current_page?>" required><br>
+                <input type="checkbox" checked name="tnc" value="acctepted" required><label>I accept the Terms of Use and agree to recieve email notifications from ARS Landbase.</label>
                 <div class="form-btn">
                     <button type="submit" name="submit_subscription">Send</button>
                 </div>
