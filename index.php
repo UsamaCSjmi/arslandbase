@@ -27,9 +27,11 @@ elseif($router == '/properties' || preg_match("/properties\/[a-z]/i",$router)){
     }
     include_once('properties.php');
 }
-elseif($router == '/property' || preg_match("/properties\/[a-z]/i",$router)){
+elseif($router == '/property' || preg_match("/property\/[a-z]/i",$router)){
     $arr = explode('/',$router);
-    
+    if(isset($arr[2])){
+        $property_name = $arr[2];
+    }
     include_once('property.php');
 }
 elseif($router == '/contact'){
@@ -60,7 +62,7 @@ elseif($router == '/privacy-policy'){
     include_once('privacy-policy.php');
 }
 else{
-    include_once('404.pzhp');
+    include_once('404.php');
 }
 
 // echo $router;

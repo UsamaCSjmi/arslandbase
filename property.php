@@ -1,4 +1,11 @@
-<?php require_once('./assets/header.php') ?>
+<?php 
+require_once('./assets/header.php');
+require_once('./assets/db_connect.php');
+$property_name = urldecoder($property_name);
+$sql = "SELECT * FROM properties WHERE title = '$property_name'";
+$result = mysqli_query($conn,$sql);
+$result = mysqli_fetch_array($result);
+?>
 <style>
     * {
         font-family: var(--font-cinzel-stylist);
@@ -7,9 +14,8 @@
 <div style="margin-top:50px" class="container col">
     <div class="banner banner-about container">
         <div class="banner-img">
-            <img src="<?php echo SITE_PATH ?>/images/properties/uploads/Luminare.jpg" style="width:100%">
+            <img src="<?php echo SITE_PATH ?>/images/properties/uploads/<?php echo $result['image_url']?>" style="width:100%">
         </div>
-
         <div class="banner-cover container">
             <!-- <div class="row center">
                     <h1 class="big-heading" style="color:#fff;">Property Name</h1>
@@ -31,11 +37,11 @@
 
     </div>
     <div id="overview-container">
-        <h1 class="big-heading" style="margin-top:20px">Camellias</h1>
+        <h1 class="big-heading" style="margin-top:20px"><?php echo $property_name?></h1>
         <div class="property-content">
             <h2 class="description-heading">Overview</h2>
             <div class="description-content shown">
-                <p>Smart World The Edition launched a new ultra-luxury residential project in Sector 66, Gurgaon. The Edition is located in one of the developed areas of Gurgaon. Besides, the project covers an area of 11 acres of land. Smart World The Edition Gurgaon offers 3.5BHK, 4.5BHK ultra-luxury residences, and Penthouse. Besides, It offers spacious and luxury apartments in different configurations and sizes, 2945 SQ FT – 5600 SQ FT. The luxury property has 3 high-rise twin towers. Each building Consists of G+40 floors. The Edition Sector 66 was developed by one of the reputed builders, smart World Developers. Besides, the Edition Apartments are designed with high-quality materials. The project has ducted VRV air Conditioning, an air purification system built into the aircon, and Italian flooring, ensuring a comfortable lifestyle. Besides, its ceiling height of 3.45 Mt is the Highest in the segment.</p>
+                <p><?php echo $result['overview']?></p>
             </div>
         </div>
 
@@ -65,7 +71,7 @@
         </div>
         
         <div id="overview" class="overview-box">
-            <img src="<?php echo SITE_PATH ?>/images/properties/uploads/Luminare.jpg" alt="Property">
+            <img src="<?php echo SITE_PATH ?>/images/properties/uploads/<?php echo $result['image_url']?>" alt="<?php echo $result['title']?>">
             <div class="overview-content">
                 <h3 class="">Overview</h3>
                 <p class="text-grey font-small mt-30">Area Range</p>

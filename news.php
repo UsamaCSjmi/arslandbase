@@ -127,7 +127,20 @@
                     </div>
                 </div>
             </div>
-
+            
+            <div class="news-container">
+                <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news3.avif" alt="News Image">
+                <div class="news-content">
+                    <h3 class="news-title">
+                        The return of the NRI homebuyer
+                    </h3>
+                    <p class="news-text">Bengaluru: Last April, Snigdha Basu and her husband Deep Basu flew to Kolkata from Singapore for the house-warming ceremony of their three-bedroom apartment, which they had registered the year before...</p>
+                    <p class="news-date">February 8, 2024</p>
+                    <div class="news-read-more">
+                        <a class="news-read-more-button" target="_blank" rel="nofollow" href="https://www.livemint.com/industry/the-return-of-the-nri-homebuyer-11707135197136.html">Read More</a>
+                    </div>
+                </div>
+            </div>
 
             <!-- <div class="news-container">
                 <img class="news-image" src="https://via.placeholder.com/300x150" alt="News Image">
