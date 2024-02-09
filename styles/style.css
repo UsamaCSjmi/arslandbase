@@ -1262,6 +1262,7 @@ footer svg{
 }
 .overview-box img{
     width: 50%;
+    max-height: 500px;
 }
 .overview-box .overview-content{
     width: 50%;

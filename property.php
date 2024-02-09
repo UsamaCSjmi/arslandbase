@@ -4,7 +4,18 @@ require_once('./assets/db_connect.php');
 $property_name = urldecoder($property_name);
 $sql = "SELECT * FROM properties WHERE title = '$property_name'";
 $result = mysqli_query($conn,$sql);
-$result = mysqli_fetch_array($result);
+if(mysqli_num_rows($result)>0){
+    echo "Yes";
+    $result = mysqli_fetch_array($result);
+}
+else{
+    echo "not";
+    ?>
+    <script>
+        window.location.href = "<?php echo SITE_PATH?>";
+    </script>
+    <?php
+}
 ?>
 <style>
     * {
@@ -17,9 +28,6 @@ $result = mysqli_fetch_array($result);
             <img src="<?php echo SITE_PATH ?>/images/properties/uploads/<?php echo $result['image_url']?>" style="width:100%">
         </div>
         <div class="banner-cover container">
-            <!-- <div class="row center">
-                    <h1 class="big-heading" style="color:#fff;">Property Name</h1>
-                </div> -->
             <div class="quick-call-property">
                 <button type="button" onclick="showQuickEnq()">
                     <span class="quick-call-property-icon">
@@ -39,10 +47,16 @@ $result = mysqli_fetch_array($result);
     <div id="overview-container">
         <h1 class="big-heading" style="margin-top:20px"><?php echo $property_name?></h1>
         <div class="property-content">
-            <h2 class="description-heading">Overview</h2>
-            <div class="description-content shown">
-                <p><?php echo $result['overview']?></p>
-            </div>
+            <?php
+            if($result['overview']!=""){
+                ?>
+                <h2 class="description-heading">Overview</h2>
+                <div class="description-content shown">
+                    <p><?php echo $result['overview']?></p>
+                </div>
+                <?php
+            }
+            ?>
         </div>
 
     </div>
@@ -75,11 +89,11 @@ $result = mysqli_fetch_array($result);
             <div class="overview-content">
                 <h3 class="">Overview</h3>
                 <p class="text-grey font-small mt-30">Area Range</p>
-                <p class="text-white">ON REQUEST</p>
+                <p class="text-white"><?php echo $result['area']?></p>
                 <p class="text-grey font-small mt-20">BASE PRICE</p>
-                <p class="text-white">ON REQUEST</p>
+                <p class="text-white"><?php echo $result['price']?></p>
                 <p class="text-grey font-small mt-20">CURRENT STATUS</p>
-                <p class="text-white">ON REQUEST</p>
+                <p class="text-white"><?php echo $result['tagline']?></p>
             </div>
         </div>
         <div class="container col">
@@ -88,60 +102,45 @@ $result = mysqli_fetch_array($result);
                     <div id="floor-plan" class="property-content">
                         <div class="property-content-header">Floor Plan</div>
                         <div class="floor-plans-buttons">
-                            <button onclick="changeFloorPlan('fp1.jpg',this)" class="fp-btn active">3 BHK Apartment</button>
-                            <button onclick="changeFloorPlan('fp2.jpg',this)" class="fp-btn">4 BHK Apartment</button>
-                            <button onclick="changeFloorPlan('fp3.jpg',this)" class="fp-btn">5 BHK Apartment</button>
+                                    <?php 
+                                    $sql = "SELECT * FROM area WHERE property_id = ".$result['property_id'];
+                                    $areas = mysqli_query($conn, $sql);
+                                    $i=true;
+                                    while($area = mysqli_fetch_array($areas)){
+                                        ?>
+                                        <button onclick="changeFloorPlan('<?php echo $area['floor_plan_image']?>',this)" class="fp-btn <?php if($i===true){echo "active";$i=$area['floor_plan_image'];}?>"><?php echo $area['type']?></button>
+                                        <?php
+                                    }
+                                    ?>
                         </div>
                         <div class="image-wrapper">
-                            <img id="floor-plan-image" src="<?php echo SITE_PATH ?>/images/floor-plans/fp1.jpg" alt="Property">
+                            <?php
+                            if($i != "" && $i != "1"){
+                                ?>
+                            <img id="floor-plan-image" src="<?php echo SITE_PATH ?>/images/floor-plans/<?php echo $i;?>" alt="Property">
+                                <?php
+                            }
+                            ?>
                         </div>
-                        <!-- <div class="floor-details">
-                            <span class="fp-det">
-                                <p class="text-grey">Built-up Area</p>
-                                <p class="text-dark">7856 Sq. Ft.</p>
-                            </span>
-                            <span class="fp-det"></span>
-                            <span class="fp-det"></span>
-                        </div> -->
                     </div>
                     <div id="area-pricing" class="property-content">
                         <div class="property-content-header">Area / Pricing</div>
 
                         <div class="property-content-table-wrapper">
                             <table>
-                                <!-- <thead>
-                                    <tr>
-                                        <th>Property Type</th>
-                                        <th>Area in Sq. Ft.</th>
-                                        <th>Min Pricing</th>
-                                    </tr>
-                                </thead> -->
                                 <tbody>
-                                    <tr>
-                                        <td>2 BHK</td>
-                                        <td>1470 Sq. Ft.</td>
-                                        <!-- <td>14332500</td> -->
-                                    </tr>
-                                    <tr>
-                                        <td>2 BHK</td>
-                                        <td>1470 Sq. Ft.</td>
-                                        <!-- <td>14332500</td> -->
-                                    </tr>
-                                    <tr>
-                                        <td>2 BHK</td>
-                                        <td>1470 Sq. Ft.</td>
-                                        <!-- <td>14332500</td> -->
-                                    </tr>
-                                    <tr>
-                                        <td>2 BHK</td>
-                                        <td>1470 Sq. Ft.</td>
-                                        <!-- <td>14332500</td> -->
-                                    </tr>
-                                    <tr>
-                                        <td>2 BHK</td>
-                                        <td>1470 Sq. Ft.</td>
-                                        <!-- <td>14332500</td> -->
-                                    </tr>
+                                    <?php 
+                                    $sql = "SELECT * FROM area WHERE property_id = ".$result['property_id'];
+                                    $areas = mysqli_query($conn, $sql);
+                                    while($area = mysqli_fetch_array($areas)){
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $area['type']?></td>
+                                            <td><?php echo $area['area']?></td>
+                                        </tr>
+                                        <?php
+                                    } 
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
@@ -149,62 +148,23 @@ $result = mysqli_fetch_array($result);
                    
                     <div id="amenities" class="property-content">
                         <div class="property-content-header">Amenities</div>
-                        <p style="font-family:var(--font-cormorant-garamond-decent-stylist); font-size:20px;font-weight:500; margin-top:20px;color:#959595">DLF Camellias presents an exclusive opportunity to own a stunning home that offers all kinds of amenities and facilities.</p>
+                        <p style="font-family:var(--font-cormorant-garamond-decent-stylist); font-size:20px;font-weight:500; margin-top:20px;color:#959595"><?php echo $result['title']?> presents an exclusive opportunity to own a stunning home that offers all kinds of amenities and facilities.</p>
                         <div class="amenities-container">
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
-                            <div class="amenity">
-                                <p>
-                                    Banquet Hall
-                                    <img src="<?php echo SITE_PATH?>/images/amenities/Banquet-Hall.png" alt="Banquet Hall">
-                                </p>
-                            </div>
+                            <?php
+                            $sql = "SELECT a.* FROM property_amenities pa JOIN all_amenities a ON pa.amenity_id=a.id WHERE pa.property_id = ".$result['property_id'];
+                            $amenities = mysqli_query($conn,$sql);
+                            while($amenity = mysqli_fetch_array($amenities)){
+                                // echo $amenity['name']."->".$amenity['image']."<br>";
+                                ?>
+                                <div class="amenity">
+                                    <p>
+                                        <?php echo $amenity['name']?>
+                                        <img src="<?php echo SITE_PATH?>/images/amenities/<?php echo $amenity['image']?>" alt="<?php echo $amenity['name']?>">
+                                    </p>
+                                </div>
+                                <?php
+                            }
+                            ?>
                         </div>
                     </div>
 
