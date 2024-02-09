@@ -2,8 +2,8 @@
 
 // Development Settings
 define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/arslandbase');
-define('SITE_PATH','http://localhost/development/arslandbase');
-define('BASE_PATH','/development/arslandbase');
+define('SITE_PATH','http://localhost/arslandbase');
+define('BASE_PATH','/arslandbase');
 
 define('DB_NAME', 'ars');
 define('DB_USER', 'root');
