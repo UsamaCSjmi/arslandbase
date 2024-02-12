@@ -34,6 +34,7 @@
                 <li><a href="<?php echo SITE_PATH?>/terms-and-conditions">Terms & Conditions</a></li>
                 <li><a href="<?php echo SITE_PATH?>/privacy-policy">Privacy Policy</a></li>
                 <li><a href="<?php echo SITE_PATH?>/faq">FAQs</a></li>
+                <li><a href="<?php echo SITE_PATH?>/blogs">Blogs</a></li>
             </ul>
         </div>
         <!-- <div class="footer-center">

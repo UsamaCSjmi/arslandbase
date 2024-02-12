@@ -58,7 +58,7 @@
                     <a class="nav-link" href="#">Resources</a>
                     <ul class="sub-nav-list">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
+                            <a class="nav-link" href="<?php echo SITE_PATH?>/blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo SITE_PATH?>/news">News & Events</a>
