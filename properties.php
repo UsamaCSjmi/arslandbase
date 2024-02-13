@@ -76,7 +76,7 @@ $num_rows = mysqli_num_rows($res);
             while($quick = mysqli_fetch_array($res)){
             ?>
                     <div class="cards_item">
-                        <a href="#" class="card">
+                        <a href="<?php echo SITE_PATH ?>/property/<?php echo urlencoder($quick['title'])?>" class="card">
                             <div class="card_image">
                                 <img src="<?php echo SITE_PATH ?>/images/properties/uploads/<?php echo $quick['image_url']?>" class="card-img-top" alt="..." loading="lazy" alt="" srcset="">
                                 <span class="call-btn" onclick="call()">

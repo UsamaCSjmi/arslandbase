@@ -5,7 +5,7 @@ define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'/arslandbase');
 define('SITE_PATH','http://localhost/development/arslandbase');
 define('BASE_PATH','/development/arslandbase');
 
-define('DB_NAME', 'ars');
+define('DB_NAME', 'ars2');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
@@ -21,7 +21,7 @@ define('DB_HOST', 'localhost');
 // define('DB_HOST', 'localhost');
 function urlencoder($str){
     $str = str_replace(" ","-",$str);
-    return $str;
+    return strtolower($str);
 }
 function urldecoder($str){
     $str = str_replace("-"," ",$str);

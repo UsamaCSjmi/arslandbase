@@ -131,13 +131,23 @@
             <div class="news-container">
                 <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news3.avif" alt="News Image">
                 <div class="news-content">
-                    <h3 class="news-title">
-                        The return of the NRI homebuyer
-                    </h3>
+                    <h3 class="news-title">The return of the NRI homebuyer</h3>
                     <p class="news-text">Bengaluru: Last April, Snigdha Basu and her husband Deep Basu flew to Kolkata from Singapore for the house-warming ceremony of their three-bedroom apartment, which they had registered the year before...</p>
                     <p class="news-date">February 8, 2024</p>
                     <div class="news-read-more">
                         <a class="news-read-more-button" target="_blank" rel="nofollow" href="https://www.livemint.com/industry/the-return-of-the-nri-homebuyer-11707135197136.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-container">
+                <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news4.avif" alt="News Image">
+                <div class="news-content">
+                    <h3 class="news-title">15 real estate firm figure in the list of India’s most valuable companies</h3>
+                    <p class="news-text">As many as 15 real estate companies, including DLF, Macrotech and Godrej Properties, figure in the list of India's most valuable companies released by Axis Bank's...</p>
+                    <p class="news-date">February 13, 2024</p>
+                    <div class="news-read-more">
+                        <a class="news-read-more-button" target="_blank" rel="nofollow" href="https://www-hindustantimes-com.cdn.ampproject.org/c/s/www.hindustantimes.com/real-estate/15-real-estate-firms-including-dlf-figure-in-the-list-of-india-s-most-valuable-companies-101707745359566-amp.html">Read More</a>
                     </div>
                 </div>
             </div>
