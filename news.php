@@ -4,6 +4,9 @@
         <h2 class="big-heading mbt-50 font-heading">News & Events</h2>
         <div class="container" style="border-top: 1px solid #00000040;padding-top: 45px;">
             <style>
+                .container{
+                    flex-wrap: wrap;
+                }
                 .news-container,
                 .news-event-container {
                 font-family: var(--font-cormorant-garamond-decent-stylist);
@@ -103,6 +106,19 @@
                 }
                 }
             </style>
+
+            
+            <div class="news-container">
+                <img class="news-image" src="<?php echo SITE_PATH?>/images/news-events/news5.avif" alt="News Image">
+                <div class="news-content">
+                    <h3 class="news-title">Elan Group Appoints BENOY to Design the 1st Luxury Mall of Gurugram</h3>
+                    <p class="news-text">Gurugram (Haryana) [India], February 21: In the dynamic world ...</p>
+                    <p class="news-date">February 22, 2024</p>
+                    <div class="news-read-more">
+                        <a class="news-read-more-button" target="_blank" rel="nofollow" href="https://www.business-standard.com/amp/content/press-releases-ani/elan-group-appoints-benoy-to-design-the-1st-luxury-mall-of-gurugram-124022100510_1.html">Read More</a>
+                    </div>
+                </div>
+            </div>
 
             
             <div class="news-container">
