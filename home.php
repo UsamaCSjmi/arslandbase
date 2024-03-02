@@ -157,7 +157,7 @@ $exclRes = mysqli_query($conn, $exclSql);
                         $excl = mysqli_fetch_array($exclRes);
                     ?>
                         <div class="cards_item">
-                            <a href="#" class="small_card">
+                            <a href="<?php echo SITE_PATH ?>/property/<?php echo urlencoder($excl['title']) ?>" class="small_card">
                                 <div class="small_card_image">
                                     <img src="<?php echo SITE_PATH ?>/images/properties/uploads/<?php echo $excl['image_url']?>" class="small_card-img-top" alt="..." loading="lazy" alt="" srcset="">
                                 </div>

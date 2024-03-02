@@ -39,7 +39,9 @@ else{
                 </button>
             </div>
             <div class="brochure">
-                <button>Download Brochure</button>
+                <button>
+                    <a href="<?php echo SITE_PATH ?>/brochures/<?php if(isset($result['brochure']) && $result['brochure']!=""){echo $result['brochure'];}?>" target="_blank">Download Brochure</a>
+                </button>
             </div>
         </div>
 
@@ -74,9 +76,15 @@ else{
                     <li>
                         <a href="#area-pricing" class="fp-nav">Area/Pricing</a>
                     </li>
+                    <?php 
+                   if($result['service_id']==1){
+                    ?>
                     <li>
                         <a href="#amenities" class="fp-nav">Amenities</a>
                     </li>
+                    <?php
+                    }
+                    ?>
                     <li>
                         <a href="#" onclick="showQuickEnq()">Quick Enquiry</a>
                     </li>
@@ -107,9 +115,11 @@ else{
                                     $areas = mysqli_query($conn, $sql);
                                     $i=true;
                                     while($area = mysqli_fetch_array($areas)){
+                                        if(isset($area['floor_plan_image']) && $area['floor_plan_image']!=""){
                                         ?>
                                         <button onclick="changeFloorPlan('<?php echo $area['floor_plan_image']?>',this)" class="fp-btn <?php if($i===true){echo "active";$i=$area['floor_plan_image'];}?>"><?php echo $area['type']?></button>
                                         <?php
+                                        }
                                     }
                                     ?>
                         </div>
@@ -133,19 +143,23 @@ else{
                                     $sql = "SELECT * FROM area WHERE property_id = ".$result['property_id'];
                                     $areas = mysqli_query($conn, $sql);
                                     while($area = mysqli_fetch_array($areas)){
+                                        if(isset($area['area']) && $area['area']!=""){
                                         ?>
                                         <tr>
                                             <td><?php echo $area['type']?></td>
                                             <td><?php echo $area['area']?></td>
                                         </tr>
                                         <?php
+                                        }
                                     } 
                                     ?>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                   
+                   <?php 
+                   if($result['service_id']==1){
+                    ?>
                     <div id="amenities" class="property-content">
                         <div class="property-content-header">Amenities</div>
                         <p style="font-family:var(--font-cormorant-garamond-decent-stylist); font-size:20px;font-weight:500; margin-top:20px;color:#959595"><?php echo $result['title']?> presents an exclusive opportunity to own a stunning home that offers all kinds of amenities and facilities.</p>
@@ -167,7 +181,9 @@ else{
                             ?>
                         </div>
                     </div>
-
+                    <?php
+                    }
+                    ?>
                 </div>
                 <!-- <div class="contact-wrapper p-20">
                     <div class="sticky-top">
