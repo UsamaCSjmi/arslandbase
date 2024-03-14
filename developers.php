@@ -12,7 +12,7 @@ $res = mysqli_query($conn,$sql);
         </div>
         <div class="banner-cover container">
             <div class="row center">
-                <h1 class="big-heading font-heading" style="color:#fff;">Our Developers</h1>
+                <h1 class="big-heading font-heading uppercase" style="color:#fff;">Our Developers</h1>
             </div>
         </div>
     </div>

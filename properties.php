@@ -58,7 +58,7 @@ $num_rows = mysqli_num_rows($res);
         </div>
         <div class="banner-cover container end-in-banner">
             <div class="row center">
-                <h1 class="big-heading font-heading" style="color:#fff;"><?php echo $filter; if(isset($area)&& $area!=""){ echo " Properties in ".$area;}?></h1>
+                <h1 class="big-heading font-heading uppercase" style="color:#fff;"><?php echo $filter; if(isset($area)&& $area!=""){ echo " Properties in ".$area;}?></h1>
             </div>
         </div>
     </div>

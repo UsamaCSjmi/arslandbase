@@ -36,3 +36,40 @@ INSERT INTO `property_amenities` (`property_id`, `amenity_id`) VALUES
 ('28', '17'), 
 ('28', '23'), 
 ('28', '24');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+blogs header background photo
+News events background like about(Newspaper cutting Background)
+Teams page 
+tnc
+privacy policy
+faqs
+banner capitalize
+sco area in sq.yards. 
+autograph floor_plan_image crop
+developers image background change
+
+

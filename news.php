@@ -1,7 +1,17 @@
 <?php require_once('./assets/header.php')?>
+
 <div style="margin-top:65px" class="container col">
+    <div class="banner banner-about container">
+        <div class="banner-img">
+            <img src="<?php echo SITE_PATH?>/images/news.jpg" style="width:100%">
+        </div>
+        <div class="banner-cover container end-in-banner">
+            <div class="row center">
+                <h1 class="big-heading font-heading uppercase" style="color:#fff;">News & Events</h1>
+            </div>
+        </div>
+    </div>
     <div class="container col pad-prop" style="margin:60px 0">
-        <h2 class="big-heading mbt-50 font-heading">News & Events</h2>
         <div class="container" style="border-top: 1px solid #00000040;padding-top: 45px;">
             <style>
                 .container{

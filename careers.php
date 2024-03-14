@@ -15,7 +15,7 @@ $exclRes = mysqli_query($conn, $exclSql);
         </div>
         <div class="banner-cover container end-in-banner">
             <div class="row center">
-                <h1 class="big-heading font-heading" style="color:#fff;">Career</h1>
+                <h1 class="big-heading font-heading uppercase" style="color:#fff;">Career</h1>
             </div>
         </div>
     </div>

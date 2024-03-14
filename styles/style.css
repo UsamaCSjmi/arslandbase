@@ -1474,3 +1474,6 @@ footer svg{
 .invalid-input{
     border:1px solid red!important;
 }
+.uppercase{
+    text-transform: uppercase;
+}

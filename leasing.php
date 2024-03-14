@@ -12,7 +12,7 @@
         </div>
         <div class="banner-cover container">
             <div class="row center">
-                <h1 class="big-heading font-heading" style="color:#fff;">Leasing</h1>
+                <h1 class="big-heading font-heading uppercase" style="color:#fff;">Leasing</h1>
             </div>
         </div>
     </div>

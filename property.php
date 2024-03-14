@@ -47,7 +47,7 @@ else{
 
     </div>
     <div id="overview-container">
-        <h1 class="big-heading" style="margin-top:20px"><?php echo $property_name?></h1>
+        <h1 class="big-heading uppercase" style="margin-top:20px"><?php echo $property_name?></h1>
         <div class="property-content">
             <?php
             if($result['overview']!=""){
