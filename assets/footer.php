@@ -79,7 +79,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        &copy; 2023 All right reserved By ARS Landbase
+        &copy; 2023 All right reserved By ARS Landbase | Designed & Developed by <a href="https://webmarlins.com/">Web Marlins Pvt. Ltd.</a>
     </div>
 </footer>
 <div class="top-scroll" onclick="scrollToTop()">
